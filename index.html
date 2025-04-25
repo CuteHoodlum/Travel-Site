@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons (heart and star) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Final Touches</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand text-info">Hood Travels</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#destinations" class="nav-link">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#login" class="nav-link">
+                <i class="bi bi-person-circle"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <div class="hero-overlay">
+              <h1 class="display-3 fw-bold">
+                <span class="text-muted">Discover Your Next</span> Adventure
+              </h1>
+              <p class="lead">
+                Book your dream vacation with exclusive deals and top-rated
+                destinations.
+              </p>
+
+              <div class="search-form mt-4">
+                <form class="row g-3">
+                  <div class="col-md-3">
+                    <label for="destination" class="form-label"
+                      >Destination</label
+                    >
+                    <select id="destination" class="form-select">
+                      <option selected>London, England</option>
+                      <option>New York, USA</option>
+                      <option>Bali, Indonesia</option>
+                      <option>Paris, France</option>
+                      <option>Barcelona, Spain</option>
+                      <option>Lagos, Nigeria</option>
+                      <option>Tokyo, Japan</option>
+                      <option>Santorini, Greece</option>
+                      <option>Dubai, UAE</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="dates" class="form-label">Dates</label>
+                    <select id="dates" class="form-select">
+                      <option selected>May 10, 2025</option>
+                      <option>August 15, 2025</option>
+                      <option>September 20, 2025</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="guests" class="form-label">Guests</label>
+                    <select id="guests" class="form-select">
+                      <option selected>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="tripType" class="form-label">Trip Type</label>
+                    <select id="tripType" class="form-select">
+                      <option selected>Cultural</option>
+                      <option>Adventure</option>
+                      <option>Relaxation</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2 d-flex align-items-end">
+                    <button type="button" class="btn btn-dark-blue w-100">
+                      Search Trips
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container my-5" id="destinations">
+      <!-- Popular Destinations Section -->
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+          <h2>Popular destinations</h2>
+          <p class="text-muted">Famous destinations around the world</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <!-- Large Card (Maldives) -->
+        <div class="col-md-5">
+          <div class="card destination-card large-card">
+            <img
+              src="https://imageio.forbes.com/specials-images/imageserve/651cf71370abd71f5a5379b4/Maldives-bucket-list-travel/960x0.jpg?format=jpg&width=1440"
+              class="card-img-top"
+              alt="Maldives"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Maldives</h5>
+              <p class="card-text">26 April 2025</p>
+            </div>
+          </div>
+        </div>
+        <!-- Smaller Cards (2x2 Grid) -->
+        <div class="col-md-7">
+          <div class="row row-cols-2 g-4">
+            <!-- nothern lights -->
+            <div class="col">
+              <div class="card destination-card small-card">
+                <img
+                  src="https://imageio.forbes.com/specials-images/imageserve/651cfae0d249113aaf7c3cc2/Northern-Lights-bucket-list-travel/960x0.jpg?format=jpg&width=1440"
+                  class="card-img-top"
+                  alt="Nothern lights"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nothern lights</h5>
+                  <p class="card-text">01 May 2025</p>
+                </div>
+              </div>
+            </div>
+            <!-- Cinque Terre -->
+            <div class="col">
+              <div class="card destination-card small-card">
+                <img
+                  src="https://imageio.forbes.com/specials-images/imageserve/651cfa2f71bdc433155c6078/Cinque-Terre-bucket-list-travel/960x0.jpg?format=jpg&width=1440"
+                  class="card-img-top"
+                  alt="Cinque Terre"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cinque Terre</h5>
+                  <p class="card-text">08 May 2025</p>
+                </div>
+              </div>
+            </div>
+            <!-- Big Ben -->
+            <div class="col">
+              <div class="card destination-card small-card">
+                <img
+                  src="https://imageio.forbes.com/specials-images/imageserve/651cf933d5e6cb1cc24ff1ce/London-Big-Ben-bucket-list-travel/960x0.jpg?format=jpg&width=1440"
+                  class="card-img-top"
+                  alt="Big Ben"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Big Ben</h5>
+                  <p class="card-text">15 May 2025</p>
+                </div>
+              </div>
+            </div>
+            <!-- Burj Khalifa -->
+            <div class="col">
+              <div class="card destination-card small-card">
+                <img
+                  src="https://imageio.forbes.com/specials-images/imageserve/651cfb3e3f072b8505bcf99f/Burj-Khalifa-in-Dubai-bucket-list-travel/960x0.jpg?format=jpg&width=1440"
+                  class="card-img-top"
+                  alt="Burj Khalifa"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Burj Khalifa</h5>
+                  <p class="card-text">20 May 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <h2 class="fw-bold">Top trending hotels worldwide</h2>
+      <p class="text-muted">
+        Discover the most trending hotels worldwide for an unforgettable
+        experience
+      </p>
+
+      <!-- Filter Buttons -->
+      <div class="d-flex flex-wrap mb-4">
+        <button class="btn btn-dark filter-btn">All</button>
+        <button class="btn btn-outline-secondary filter-btn">France</button>
+        <button class="btn btn-outline-secondary filter-btn">Greece</button>
+        <button class="btn btn-outline-secondary filter-btn">Italy</button>
+        <button class="btn btn-outline-secondary filter-btn">England</button>
+      </div>
+
+      <!-- Hotel Cards -->
+      <div class="row">
+        <!--France Hotel 1 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="France">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.7</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Four Seasons Hôtel</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Paris, France
+              </p>
+              <p>
+                <span class="price-old">$2,654</span>
+                <span class="price-new">$1,562</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--France Hotel 2 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="France">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.8</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Domaine de Primard</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Guainville, France
+              </p>
+              <p>
+                <span class="price-old">$4,643</span>
+                <span class="price-new">$4,533</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--France Hotel 3 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="France">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.8</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Cheval Blanc St-Tropez</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Saint-Tropez, France
+              </p>
+              <p>
+                <span class="price-old">$3,924</span>
+                <span class="price-new">$2,875</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--France Hotel 4 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="France">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.9</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Barrière Le Westminster</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Le Touquet, France
+              </p>
+              <p>
+                <span class="price-old">$1,654</span>
+                <span class="price-new">$1,245</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Greece Hotel 1 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="Greece">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.8</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Domes Novos Santorini</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Santorini, Greece
+              </p>
+              <p>
+                <span class="price-old">$3,924</span>
+                <span class="price-new">$2,875</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Greece Hotel 2 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="Greece">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.9</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Four seasons Mykoons</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Mykonos, Greece
+              </p>
+              <p>
+                <span class="price-old">$1,654</span>
+                <span class="price-new">$1,245</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--Italy Hotel 1 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="Italy">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.8</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Hotel Splendido</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Portofino, Italy
+              </p>
+              <p>
+                <span class="price-old">$4,643</span>
+                <span class="price-new">$4,533</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Italy Hotel 2 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="Italy">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.8</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Hotel de Russie</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Rome, Italy
+              </p>
+              <p>
+                <span class="price-old">$3,924</span>
+                <span class="price-new">$2,875</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--England Hotel 1 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="England">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.8</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>The Ned</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> London, England
+              </p>
+              <p>
+                <span class="price-old">$3,924</span>
+                <span class="price-new">$2,875</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--England Hotel 2 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="England">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.8</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Treehouse Hotel</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Manchester England
+              </p>
+              <p>
+                <span class="price-old">$4,643</span>
+                <span class="price-new">$4,533</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--England Hotel 3 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="England">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.9</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Six Senses London</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> London, England
+              </p>
+              <p>
+                <span class="price-old">$1,654</span>
+                <span class="price-new">$1,245</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--England Hotel 4 -->
+        <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="England">
+          <div class="hotel-card">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <span class="rating"
+              ><i class="fas fa-star text-warning"></i> 4.8</span
+            >
+            <span class="heart"><i class="far fa-heart"></i></span>
+            <div class="p-3">
+              <h5>Bovey Castle</h5>
+              <p class="text-muted">
+                <i class="fas fa-map-marker-alt"></i> Devon, England
+              </p>
+              <p>
+                <span class="price-old">$3,924</span>
+                <span class="price-new">$2,875</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <!-- Accommodation Types Section -->
+      <h2>Explore accommodation types</h2>
+      <p class="text-muted">
+        Discover our range of property types for every traveler's preference
+      </p>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
+        <!-- Villas -->
+        <div class="col">
+          <div class="card accommodation-card">
+            <img
+              src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dmlsbGFzfGVufDB8MHwwfHx8Mg%3D%3D"
+              class="card-img-top"
+              alt="Villas"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Villas</h5>
+              <p class="card-text">12,984 available</p>
+            </div>
+          </div>
+        </div>
+        <!-- Apartments -->
+        <div class="col">
+          <div class="card accommodation-card">
+            <img
+              src="https://images.unsplash.com/photo-1652234079940-ac7a3d8b4a72?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBhcnRtZW50fGVufDB8MHwwfHx8Mg%3D%3D"
+              class="card-img-top"
+              alt="Apartments"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Apartments</h5>
+              <p class="card-text">10,984 available</p>
+            </div>
+          </div>
+        </div>
+        <!-- Resorts -->
+        <div class="col">
+          <div class="card accommodation-card">
+            <img
+              src="https://images.unsplash.com/photo-1617859047452-8510bcf207fd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzb3J0c3xlbnwwfDB8MHx8fDI%3D"
+              class="card-img-top"
+              alt="Resorts"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Resorts</h5>
+              <p class="card-text">367 available</p>
+            </div>
+          </div>
+        </div>
+        <!-- Cottages -->
+        <div class="col">
+          <div class="card accommodation-card">
+            <img
+              src="https://images.unsplash.com/photo-1579627559241-aa855a66df15?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y290dGFnZXxlbnwwfDB8MHx8fDI%3D"
+              class="card-img-top"
+              alt="Cottages"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cottages</h5>
+              <p class="card-text">255 available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAROUSEL SECTION -->
+    <div class="container-fluid carousel-section text-center" id="gallery">
+      <h2 class="mb-3">Gallery Photos</h2>
+      <p class="mb-4">Explore the most beautiful places in the world.</p>
+
+      <!-- Bootstrap Carousel -->
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#galleryCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galleryCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galleryCarousel"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galleryCarousel"
+            data-bs-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galleryCarousel"
+            data-bs-slide-to="4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galleryCarousel"
+            data-bs-slide-to="5"
+          ></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1661602715735-d401dafd3615?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="Santorini, Greece"
+            />
+            <div class="carousel-caption d-block">
+              <h5>Santorini</h5>
+              <p>Greece</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+              class="d-block w-100"
+              alt="12, Apostles, Australia"
+            />
+            <div class="carousel-caption d-block">
+              <h5>12, Apostles</h5>
+              <p>Australia</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1691743441282-72dbe8f91dcc?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="Lekki, Lagos"
+            />
+            <div class="carousel-caption d-block">
+              <h5>Ikoyi</h5>
+              <p>Lagos</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1662165571995-ce62cf4d007e?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="Forbidden City"
+            />
+            <div class="carousel-caption d-block">
+              <h5>Forbidden City</h5>
+              <p>Beijing</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1564507592333-c60657eea523"
+              class="d-block w-100"
+              alt="Taj Mahal"
+            />
+            <div class="carousel-caption d-block">
+              <h5>Taj Mahal</h5>
+              <p>India</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="Taj Mahal"
+            />
+            <div class="carousel-caption d-block">
+              <h5>Eiffel Tower</h5>
+              <p>France</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#galleryCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#galleryCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Customer Reviews -->
+    <section class="review-section">
+      <div class="container">
+        <h2 class="text-dark mb-2">Customer Reviews</h2>
+        <p class="text-muted mb-4">
+          See customer reviews to get a better understanding of each trip
+        </p>
+
+        <div class="review-card">
+          <div class="row">
+            <!-- Images Section -->
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div class="row review-images">
+                <div class="col-6 mb-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1706920102507-3f6a8ce88acb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsbGluZyUyMGN1c3RvbWVyc3xlbnwwfDB8MHx8fDI%3D"
+                    alt="Review Image 1"
+                    class="w-100"
+                  />
+                </div>
+                <div class="col-6 mb-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1738951411392-aeceb0802afa?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRyYXZlbGxpbmclMjBjdXN0b21lcnN8ZW58MHwwfDB8fHwy"
+                    alt="Review Image 2"
+                    class="w-100"
+                  />
+                </div>
+                <div class="col-12">
+                  <img
+                    src="https://images.unsplash.com/41/EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGN1c3RvbWVyc3xlbnwwfDB8MHx8fDI%3D"
+                    alt="Review Image 3"
+                    class="w-100"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Review Content -->
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="https://images.unsplash.com/photo-1645106281719-7b7c50266a04?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGpvaG4lMjBkb2V8ZW58MHwyfDB8fHwy"
+                  alt="User Profile"
+                  class="user-img me-3"
+                />
+                <div>
+                  <h5 class="mb-0">Kathryn Murphy</h5>
+                  <p class="text-muted mb-0">
+                    Notting Hill, London, United Kingdom
+                  </p>
+                </div>
+              </div>
+              <div class="star-rating mb-3">
+                <span>★★★★★</span> <span class="text-muted">4.7</span>
+              </div>
+              <h6 class="text-dark">Six Senses London Hotel Review</h6>
+              <p class="text-muted">
+                Nestled in the heart of London, the Six Senses Hotel blends
+                modern luxury with a tranquil, wellness-inspired atmosphere. The
+                rooms are impeccably designed with natural materials and calming
+                tones, creating a serene retreat from the city's hustle. I
+                especially appreciated the in-room air purification system and
+                the high-tech wellness features. The staff were exceptionally
+                courteous and made me feel right at home. Don't miss the rooftop
+                bar with panoramic views of the city and the spa offering deeply
+                rejuvenating treatments. A perfect urban escape.
+              </p>
+              <!-- Navigation Arrows -->
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-outline-secondary me-2">←</button>
+                <button class="btn btn-outline-secondary">→</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us -->
+    <div class="container-fluid" id="about">
+      <div class="row mt-5 p-4 align-items-center">
+        <!-- Text Section -->
+        <div class="col-md-6">
+          <h2 class="section-title">About Hood Travels</h2>
+
+          <!-- Mission -->
+          <div class="content-box">
+            <h3>Our Mission</h3>
+            <p>
+              We inspire and empower travelers to explore the world with
+              confidence, crafting personalized journeys that connect you with
+              the heart of every destination.
+            </p>
+          </div>
+
+          <!-- Story -->
+          <div class="content-box">
+            <h3>Our Story</h3>
+            <p>
+              Founded in 2018 by passionate explorers, Hood Travels started with
+              a dream to make travel meaningful. Today, we’ve curated over 300
+              trips across 153 destinations with 176 expert guides.
+            </p>
+          </div>
+
+          <!-- Why Choose Us -->
+          <div class="content-box">
+            <h3>Why Choose Us</h3>
+            <p>
+              Our tailored itineraries, local expertise, and commitment to
+              sustainable travel set us apart. We ensure every journey is
+              seamless and unforgettable.
+            </p>
+          </div>
+
+          <!-- Read More Button -->
+          <button class="read-more-btn mb-4 mb-md-0">
+            Read More <span>→</span>
+          </button>
+        </div>
+        <!-- Image Section -->
+        <div class="col-md-6">
+          <div class="image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1681471809562-75f912ac46fc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1hbGRpdmVzfGVufDB8MHwwfHx8Mg%3D%3D"
+              alt="Travel Image"
+              class="about-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer-section" id="contact">
+      <div class="container">
+        <div class="row">
+          <!-- Column 1 -->
+          <div class="col-md-3 mb-4">
+            <div class="mb-4">
+              <a
+                href="#"
+                class="d-inline-flex align-items-center text-decoration-none"
+              >
+                <span class="fs-4 text-info">Hood Travels</span>
+              </a>
+            </div>
+            <div class="footer-links">
+              <a href="#">Manage your trips</a>
+              <a href="#">Contact Customer Service</a>
+              <a href="#">Security Information Center</a>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-3 mb-4">
+            <h5 class="footer-heading text-secondary">Explore more</h5>
+            <div class="footer-links">
+              <a href="#">Seasonal & Holiday Deals</a>
+              <a href="#">Travel Articles</a>
+              <a href="#">Traveller Review Awards</a>
+              <a href="#">Find Flights</a>
+              <a href="#">Book Restaurants</a>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-3 mb-4">
+            <h5 class="footer-heading text-secondary">Terms & Settings</h5>
+            <div class="footer-links">
+              <a href="#">Privacy & Cookies</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Partner Disputes</a>
+              <a href="#">Modern Slavery Policy</a>
+              <a href="#">Human Rights Policy</a>
+            </div>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="col-md-3 mb-4">
+            <div>
+              <h5 class="footer-heading text-secondary">About Us</h5>
+              <div class="footer-links">
+                <a href="#">About Travel.rd</a>
+                <a href="#">How We Work</a>
+                <a href="#">Sustainable Travel</a>
+                <a href="#">Media</a>
+                <a href="#">Contact the Company</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="row">
+          <div class="col-md-6">
+            <p class="copyright">
+              Copyright © Hood Travels. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="social-icon"
+              ><i class="bi bi-instagram text-white"></i
+            ></a>
+            <a href="#" class="social-icon"
+              ><i class="bi bi-facebook text-white"></i
+            ></a>
+            <a href="#" class="social-icon"
+              ><i class="bi bi-whatsapp text-white"></i
+            ></a>
+            <a href="#" class="social-icon"
+              ><i class="bi bi-tiktok text-white"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="hotel.js"></script>
+  </body>
+</html>
