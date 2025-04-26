@@ -36,13 +36,13 @@ select {
 
 /* Color Scheme */
 :root {
-  --primary: #2b6cb0; /* Blue for buttons and highlights */
-  --secondary: #48bb78; /* Green for accents */
-  --text-dark: #1a202c; /* Dark text */
-  --text-muted: #718096; /* Muted text */
-  --background: #f7fafc; /* Light background */
-  --card-bg: #ffffff; /* White for cards */
-  --overlay: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  --primary: #2b6cb0;
+  --secondary: #48bb78;
+  --text-dark: #1a202c;
+  --text-muted: #718096;
+  --background: #f7fafc;
+  --card-bg: #ffffff;
+  --overlay: rgba(0, 0, 0, 0.6);
 }
 
 /* Navbar */
