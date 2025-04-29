@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="final.css" />
     <!-- Font Awesome for icons (heart and star) -->
     <link
       rel="stylesheet"
@@ -44,7 +44,7 @@
               <a href="#destinations" class="nav-link">Destinations</a>
             </li>
             <li class="nav-item">
-              <a href="#services" class="nav-link">Services</a>
+              <a href="#services" class="nav-link">Hotels/Services</a>
             </li>
             <li class="nav-item">
               <a href="#gallery" class="nav-link">Gallery</a>
@@ -56,7 +56,12 @@
               <a href="#contact" class="nav-link">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="#login" class="nav-link">
+              <a
+                href="#login"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modalSignin"
+              >
                 <i class="bi bi-person-circle"></i>
               </a>
             </li>
@@ -64,6 +69,104 @@
         </div>
       </div>
     </nav>
+    <!-- Sign UP Modal Code -->
+    <div
+      class="modal fade"
+      id="modalSignin"
+      tabindex="-1"
+      aria-labelledby="modalSigninLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h1 class="fw-bold mb-0 fs-2" id="modalSigninLabel">Sign Up</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-5 pt-0">
+            <!-- your form here -->
+            <form class="was-validated">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="First Name"
+                  required
+                />
+                <label for="firstName">First Name</label>
+                <div class="invalid-feedback">Please fill this field</div>
+                <div class="valid-feedback">Good</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Last Name"
+                  required
+                />
+                <label for="lastName">Last Name</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="Username"
+                  required
+                />
+                <label for="username">Username</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+                <label for="password">Password</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmPassword"
+                  placeholder="Confirm Password"
+                  required
+                />
+                <label for="confirmPassword">Confirm Password</label>
+              </div>
+
+              <div class="form-check mb-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="termsCheck"
+                  required
+                />
+                <label class="form-check-label" for="termsCheck"
+                  >Agree to terms</label
+                >
+              </div>
+
+              <button class="btn btn-success" type="submit">Submit</button>
+              <button class="btn btn-secondary" type="reset">Reset</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -238,7 +341,7 @@
       </div>
 
       <!-- Hotel Cards -->
-      <div class="row">
+      <div class="row" id="services">
         <!--France Hotel 1 -->
         <div class="col-md-3 mb-4 hotel-card-wrapper" data-country="France">
           <div class="hotel-card">
